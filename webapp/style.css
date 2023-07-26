@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(agri3.jpg);
+	background-size:100%;	
+}
+div.main{
+	width:400px;
+	margin:100px auto 0px auto;
+}
+h2{
+	text-align:center;
+	padding:20px;
+	font-family:sans-serif;
+}
+div.register{
+	margin-top:60px;
+	background-color:rgba(0,0,0,0.75);
+	width:100%;
+	font-size:18px;
+	border-radius:10px;
+	border:1px solid rgba(255,255,255,0.3);
+	box-shadow:12px 12px 20px rgba(0,0,0,0.3);
+	color:#fff;
+}
+form#register{
+	margin:20px;
+}
+.a{
+    color: #fff;
+    width: 200;
+    padding:15px 10px;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight:bold;
+    border:2px solid #009688;
+    background: black;
+}
+input{
+	border-radius:6px;
+	border-style:solid;
+	border-width:3px;
+	border-color:black;
+	color:grey;
+}
