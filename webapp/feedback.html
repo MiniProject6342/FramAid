@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script>
+function showAlert(){
+	alert("Thank You For Your response!!");
+}
+
+
+</script>
+</head>
+<body>
+<div class="wrapper">
+<button class="feedback_btn send_btn">SEND YOUR FEEDBACK</button>
+<div class="modal_wrapper">
+<div class="shadow close_btn"></div>
+<div class="modal">
+<div class="close_btn">
+&#128473;
+</div>
+<div class="header">
+<h3>Give your feedback</h3>
+<p>What do you think of this website?</p>
+
+<ul>
+<li id="emoji">&#128524;</li>
+<li id="emoji">&#128077;</li>
+<li id="emoji">&#128546;</li>
+<li id="emoji">&#128525;</li>
+<li id="emoji">&#128076;</li>
+</ul>
+</div>
+
+<div class="body">
+<p>Do you have any thoughts you'd like to share?</p>
+<textarea class="textarea"></textarea>
+</div>
+<div class="footer">
+<button class="sendbtn" onclick="showAlert()">SEND</button>
+<button class="cancelbtn">CANCEL</button>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var feedback_btn=document.querySelector(".feedback_btn");
+var wrapper=document.querySelector(".wrapper");
+var close_btn=document.querySelector(".close_btn");
+var li_items=document.querySelector("ul li");
+
+
+
+feedback_btn.addEventListener("click",function(){
+	wrapper.classList.add("active");
+})
+
+close_btn.forEach(function(btn){
+	btn.addEventListener("click",function(){
+		wrapper.classList.remove("active");
+	})
+})
+	
+	li_items.forEach(function(item){
+      item.addEventListener("click",function(){
+    	  li_items.forEach(function(li){
+    				li.classList.remove("active");
+	})
+	
+	item.classList.add("active");
+    	  })
+	})
+</script>
+</body>
+</html>
