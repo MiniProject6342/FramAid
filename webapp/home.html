@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HOME PAGE</title>
+<style>
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+}
+a:link,a:visited,a:hover,a:active{
+text-decoration:none;
+text-align:center;
+  color: white;
+  background-color:black;
+}
+#header {
+		background-color:green;
+		color:black;
+		padding:10px;
+		text-align: center;
+	}
+	.main{
+	align:center;
+	background-color:white;
+    font-family:serif;
+    font-weight:bolder;
+	}
+
+	#search-bar {
+		width: 50%;
+		margin: 20px auto;
+		text-align: center;
+	}
+
+	#search-bar input[type=text] {
+		padding: 10px;
+		border: none;
+		width: 75%;
+		font-size: 16px;
+		border-radius: 20px;
+		outline: none;
+		box-shadow: 0px 0px 5px #333;
+	}
+
+	#search-bar input[type=submit] {
+		padding: 10px;
+		background-color: #333;
+		color: #fff;
+		border: none;
+		border-radius: 20px;
+		font-size: 16px;
+		cursor: pointer;
+		box-shadow: 0px 0px 5px #333;
+	}
+
+	#product-listings {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:space-between;
+	}
+
+	.product {
+		margin: 10px;
+		padding: 10px;
+		background-color: #f2f2f2;
+		border-radius: 10px;
+		box-shadow: 0px 0px 5px #333;
+		width: 300px;
+		height:300px;
+		position:relative;
+		align-items:"center";
+	}
+	
+
+	.product img {
+		display: block;
+		margin: auto;
+		width: 150px;
+		height: 100px;
+	}
+
+	.product h3 {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.product p {
+		text-align: center;
+		margin: 5px 0;
+	}
+	
+.link{
+text-align:center;}
+.nav{
+text-align:right;
+background-color:red;
+}
+</style>
+</head>
+<body>
+<header id="header">
+		<h1 class="main"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS06gs0pwBi6e4hcmXlXKUa3DbHwjUka8xmVg&usqp=CAU" width="100" height="70" alt="no img" align="middle">FARM AID</h1>
+		             
+	</header>
+	
+	<nav class="nav">	
+           <a href="Logout" target="_blank"><h3>LOGOUT</h3> </a>
+           <a href="feedback.html" target="_self"><h3>FEEDBACK</h3></a>
+           <a href="DisplayCart" target="_blank"><h3>View My Cart</h3></a>
+             </nav>
+
+	<div id="search-bar">
+		<form action="searchServlet" method="get">
+			<input type="text" placeholder="Search products..." name="search1">
+			<input type="submit" value="Search">
+		</form>
+	</div>
+
+	<div id="product-listings">
+		<div class="product">
+			<img src="https://www.swarajtractors.com/sites/default/files/images/Product-catalogue-40-50hp-742%20XT-985x590.jpg" alt="Product 1">
+			<h3>EQUIPMENT</h3>
+			<p>used in agriculture, construction, road building,in the form of bulldozers, scrapers, and diggers.</p>
+			<div class="link">
+			<a href="resources.html">VISIT</a>
+			</div>
+		</div>
+		
+		<div class="product">
+			<img src="https://images.yourstory.com/cs/5/f02aced0d86311e98e0865c1f0fe59a2/indian-farmer-1610471656527.png?w=752&fm=auto&ar=2:1&mode=crop&crop=faces" alt="Product 2">
+			<h3>WORKERS</h3>
+			<p>Farmers have great importance in our society. They are the ones who provide us food to eat. Since every person needs proper food for their living, so they are a necessity in society.</p>
+			<div class="link">
+			<a href="worker.html">VISIT</a>
+			</div>
+			</div>
+
+		<div class="product">
+			<img src="https://i0.wp.com/indianinfrastructure.com/wp-content/uploads/2020/08/II-54.jpg?resize=678%2C381&ssl=1" alt="Product 3">
+			<h3>STORAGE</h3>
+			<p>Warehouses are scientific storage structures especially constructed for the protection of the quantity and quality of stored products. </p>
+			<div class="link">
+			<a href="Warehouse.html">VISIT</a>
+			</div>
+		</div>
+		
+		</div>  
+</body>
+</html>
