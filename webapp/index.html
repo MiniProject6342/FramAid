@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <script>
+     function val(){
+    	 var u1=document.f.u.value;
+    	 var p1=document.f.p.value;
+    	 var e1=document.f.e.value;
+    	 var r1=/^[A-Z]/;
+    	 var r3=/^[a-zA-Z][1-9]@(gmail|yahoo).com$/;
+    	 var res1=u1.match(r1);
+    	 var res3=e1.match(r3);
+    	 if(res1 && res3){
+    		 return true;
+    	 }
+    	 else{
+    		 document.write('invalid');
+    		 return false;
+    	 }
+     }
+  </script>
+</head>
+<body>
+	<form name="f" action="CookieDemo" method="get" onsubmit="val()">
+	  name:<input type="text" name="u"><br>
+	  email:<input type="email" name="e"><br>
+	  <input type="submit">
+	</form>
+</body>
+</html>
